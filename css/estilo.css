@@ -1,0 +1,492 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #ccffff;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #66ccff;
+}
+
+.contenedor-flex img {
+    width: 100px;
+    height: auto;
+}
+
+.busqueda input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #014f69;
+    color: #ccffff;
+    margin-right: 10px;
+    width: 700px;
+}
+
+.busqueda button[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #014f69;
+    color: #ccffff;
+    cursor: pointer;
+}
+
+.entrar-registrate {
+    text-decoration: none;
+    color:  #0099cc;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.carrito {
+    position: relative;
+}
+
+.carrito img {
+    width: 30px;
+    height: auto;
+}
+
+.carrito-cantidad {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background-color: #014f69;
+    color: #ccffff;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 14px;
+}
+
+/* Estilos para la barra de navegación */
+.menu {
+    list-style: none;
+    padding: 0px;
+    background-color: #05698b;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    margin: 0;
+    display: inline-block;
+    margin-right: 20px;
+    position: relative; /* Esto es importante para posicionar el menú desplegable */
+}
+
+.menu li a {
+    text-decoration: none;
+    color:  #66ffff;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s;
+
+}
+
+.menu li a:hover {
+    background-color: #66ccff;
+}
+
+/* Estilos para las secciones */
+section {
+    padding: 20px;
+}
+
+
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+ul li a:hover {
+    color: #99ffff;
+}
+.redes-sociales{
+    display: flex;
+    gap: 20px;
+}
+/* Estilos para el menú desplegable */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #228fc5;
+    padding: 10px;
+    border: 1px solid  #006666;
+    z-index: 1000;
+}
+.menu li:hover .submenu {
+    display: block;
+}
+
+/* CSS PARA EL SLIDER */
+h1 {
+    font-size: 50px; /* Tamaño de fuente grande */
+    color: #0099cc;
+    text-transform: uppercase; /* Convertir el texto en mayúsculas */
+    text-align: center; /* Centrar el texto */
+    letter-spacing: 6px; /* Espaciado entre letras */
+    font-family: 'Orbitron', sans-serif; /* Fuente con estilo de juego */
+    margin: 20px 0; /* Margen superior e inferior */
+    border: 1px solid #003366;
+    box-shadow: 0px 0px 5px #003366;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+/* Estilo para el contenedor principal */
+.container {
+    text-align: center; /* Centrar el contenido del contenedor */
+    cursor: pointer;
+    box-shadow: 5px 5px 15px  #0099cc;
+}
+
+/* Estilo para las imágenes en el carrusel */
+.blog-content img {
+    max-width: 100%; /* Asegurar que las imágenes no sean más anchas que su contenedor */
+    height: auto; /* Mantener la proporción de aspecto de las imágenes */
+
+}
+.container:hover{
+    background-color: #99ffff;
+    transform: scale(1.02,1.02);
+}
+/* CSS PARA LO MAS VENDIDO */
+.main{
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+}
+.product-list {
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.product {
+    background-color: #88f8f8;
+    border: 2px solid #003366;
+    padding: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+    width: 195px;
+    height: 200px;
+    margin: 10px;
+}
+.product img {
+    width: 186px;
+    height: 150px;
+    max-width: 100%;
+    border-radius: 5px;
+
+}
+.product h2 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color:  #003366;
+}
+.product p{
+    font-size: 1.2rem;
+    margin: 5px 0;
+    color:  #003366;
+}
+/* Estilo para el hover (efecto al pasar el ratón) de los artículos */
+.product:hover {
+    background-color: #ccffff;
+    color: #1c1c1c;
+    transition: background-color 0.3s, color 0.3s;
+}
+/* CSS PARA ACCESORIOS */
+/* Estilo para la etiqueta <main> */
+main {
+    background-color: #ccffff;
+    color: #ffffff;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+/* Estilo para el encabezado <h1> */
+h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+}
+/* Estilo para la sección de accesorios */
+.accesorios-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* Estilo para cada artículo de accesorios */
+.accesorios {
+    background-color: #88f8f8;
+    border: 2px solid #003366;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 15px;
+    text-align: center;
+}
+/* Estilo para las imágenes de accesorios */
+.accesorios img {
+    max-width: 100%;
+    border-radius: 5px;
+    width: 186px;
+    height: 150px;
+}
+/* Estilo para los títulos de accesorios */
+.accesorios h2 {
+    font-size: 24px;
+    color: #003366;
+    margin-top: 10px;
+}
+/* Estilo para los precios de accesorios */
+.accesorios p {
+    font-size: 18px;
+    color: #003366;
+    margin-top: 5px;
+}
+/* Estilo para el hover (efecto al pasar el ratón) de los artículos */
+.accesorios:hover {
+    background-color: #ccffff;
+    color: #ff9900;
+    transition: background-color 0.3s, color 0.3s;
+}
+/* CSS PARA LIQUIDACION */
+/* Estilo para la etiqueta <main> */
+main {
+    background-color: #ccffff;
+    color: #ffffff;
+    font-family: 'Orbitron', sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+/* Estilo para el encabezado <h1> */
+h1 {
+    font-size: 36px;
+    text-transform: uppercase;
+}
+/* Estilo para la sección de accesorios */
+.liquidacion-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* Estilo para cada artículo de accesorios */
+.liquidacion {
+    background-color: #88f8f8;
+    border: 2px solid #003366;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+}
+/* Estilo para las imágenes de accesorios */
+.liquidacion img{
+    max-width: 100%;
+    border-radius: 5px;
+    width: 186px;
+    height: 150px;
+}
+/* Estilo para los títulos de accesorios */
+.liquidacion h2 {
+    font-size: 24px;
+    color: #003366;
+    margin-top: 10px;
+}
+/* Estilo para los precios de accesorios */
+.liquidacion p{
+    font-size: 18px;
+    color: #003366;
+    margin-top: 5px;
+}
+/* Estilo para el hover (efecto al pasar el ratón) de los artículos */
+.liquidacion:hover{
+    background-color: #ccffff;
+    color: #ff9900;
+    transition: background-color 0.3s, color 0.3s;
+}
+.circ-desc {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: #014f69;
+    color: #99ffff;
+    border-radius: 50%;
+    padding: 5px 10px;
+    transform: translate(-50%, -50%);
+}
+
+.precio-orig {
+    text-decoration: line-through;
+    margin-right: 5px;
+    color: #003366;
+}
+
+.desc-precio {
+    font-weight: bold;
+    color: #006699;
+}
+/*ESTILO GENERAL DEL FOOTER */
+footer {
+    background-color: #ccffff;
+    color: #66ffff;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive; /* Utiliza una fuente estilo píxel */
+}
+
+/* Estilo de los enlaces */
+.links-foot ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.links-foot ul li {
+    margin: 10px 0;
+}
+.links-foot{
+    color: #003366; /* Color para los enlaces */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s; /* Transición de color suave */
+    background-color: #c3ffff;
+}
+
+.links-foot a {
+    color: #0066cc; /* Color para los enlaces */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s; /* Transición de color suave */
+}
+
+.links-foot a:hover {
+    color: #66ccff; /* Cambio de color al pasar el mouse */
+}
+
+/* Estilo de "Acerca de Nosotros" */
+.footer-nosotros {
+    text-align: center;
+    color: #0066cc;
+    background-color: #c4ffff;
+}
+.footer-nosotros h2{
+    text-align: center;
+    color: #0066cc;
+}
+
+.logo-foot img {
+    max-width: 10%; /* Tamaño máximo del logotipo */
+    border-color: #66ccff;
+}
+
+/* Estilo de los íconos de contacto */
+.contact-foot i {
+    color: #0066cc; /* Color rosa para los íconos */
+    margin-right: 10px;
+}
+
+/* Estilo del texto de contacto */
+.contact-foot p {
+    margin: 5px 0;
+    color: #0066cc;
+}
+
+/* Estilo del disclaimer */
+.footer-disclaimer {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #003366;
+    background-color: #c1fafa;
+}
+/* Estilo general del carrito de compras */
+#carrito-count {
+    display: inline-block;
+    background-color:  #00ffff;
+    color: #000033;
+    padding: 5px 10px;
+    border-radius: 50%;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#carrito-count:hover {
+    background-color: #000033;
+    color: #00ffff;
+    box-shadow: 2px 2px 2px #00ffff;
+
+}
+
+#carrito {
+    display: none; /* El carrito estará oculto inicialmente */
+    background-color: #33ffff;
+    border: 2px solid #000033;
+    border-radius: 5px;
+    padding: 10px;
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    z-index: 1;
+}
+
+#carrito button {
+    background-color: #00cccc;
+    color:  #000033;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#carrito button:hover {
+    background-color: #000033;
+    color: #33ffff;
+}
+
+#total {
+    font-weight: bold;
+    color: #009999;
+}
+
+/* Estilo para los botones "Ver Carrito" y "Realizar Compra" */
+button {
+    background-color: #00ffff;
+    color:  #000033;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #00cccc;
+}
+
+
+
+
+
+
+
